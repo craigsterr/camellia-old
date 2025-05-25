@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Neue Haas Grotesk Display";
+  src: url("/fonts/NeueHaasDisplayThin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk Display";
+  src: url("/fonts/NeueHaasDisplayBlack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Neue Haas Grotesk Display", sans-serif;
+  font-size: 3rem;
+}
+
+$side-margins: 17rem;
+
+section {
+  width: 40%;
+  margin-top: 10rem;
+  margin-left: $side-margins;
+  margin-right: $side-margins;
+  min-width: 1vw;
+}
+
+.hero {
+  .hero-content {
+    animation: fade-slide-right 0.6s ease-in-out;
+    min-width: 1vw;
+  }
+}
+
+.section1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100rem;
+  margin-left: auto;
+  .section1-content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    text-align: right;
+    p {
+      opacity: 0;
+      animation: fade-slide-left 0.6s ease-in-out 0.2s forwards;
+    }
+
+    h2 {
+      transform: translateX(-60%);
+      opacity: 0;
+      animation: fade-slide-left-further 1.2s ease-in-out 0.1s forwards;
+    }
+
+    .who-image {
+      opacity: 0;
+      animation: fade-slide-right 0.6s ease-in-out 0.3s forwards;
+      margin-right: 4rem;
+    }
+  }
+}
+
+.section2 {
+  .section2-content {
+    animation: fade-slide-left 0.6s ease-in-out 0.4s forwards;
+  }
+}
+
+.section3 {
+  animation: fade-slide-right 0.6s ease-in-out 0.5s forwards;
+  margin-right: auto;
+  margin-left: auto;
+  width: 70vw;
+}
+
+@keyframes fade-slide-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-slide-left {
+  0% {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-slide-left-further {
+  0% {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-60%);
+  }
+}
