@@ -1,8 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  basePath: "/camellia",
-  assetPrefix: "/camellia/",
+  // basePath: "/camellia",
+  // assetPrefix: "/camellia/",
   images: {
     remotePatterns: [
       {
