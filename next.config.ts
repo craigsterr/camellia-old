@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  basePath: "/camellia",
+  assetPrefix: "/camellia/",
   images: {
     remotePatterns: [
       {
@@ -10,6 +12,8 @@ const nextConfig: NextConfig = {
     ],
     dangerouslyAllowSVG: true,
   },
+  output: "export",
+  distDir: "dist",
 };
 
 export default nextConfig;
