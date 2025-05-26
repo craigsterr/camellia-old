@@ -2,10 +2,14 @@ import NavBar from "./NavBar";
 import Collapsable from "./Collapsable";
 import Footer from "./Footer";
 import Image from "next/image";
-
+import Head from "next/head";
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>camellia</title>
+        {/* meta tags */}
+      </Head>
       <NavBar />
       <main>
         <section className="hero" aria-label="Introduction">
