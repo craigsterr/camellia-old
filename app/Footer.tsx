@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./Footer.module.scss";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function Footer() {
   return (
@@ -28,7 +29,7 @@ export default function Footer() {
               height={100}
             />{" "}
             <Image
-              src="/images/linkedin-logo.webp"
+              src={`${basePath}/images/linkedin-logo.webp`}
               alt="LinkedIn Logo"
               width={100}
               height={100}
