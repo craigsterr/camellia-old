@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from "./Footer.module.scss";
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function Footer() {
   return (
@@ -23,13 +22,13 @@ export default function Footer() {
           <div className="right">
             <h2>Check us out:</h2>
             <Image
-              src="/images/insta-logo.webp"
+              src={`/camellia/images/insta-logo.webp`}
               alt="Instagram Logo"
               width={100}
               height={100}
             />{" "}
             <Image
-              src={`${basePath}/images/linkedin-logo.webp`}
+              src={`/camellia/images/linkedin-logo.webp`}
               alt="LinkedIn Logo"
               width={100}
               height={100}
