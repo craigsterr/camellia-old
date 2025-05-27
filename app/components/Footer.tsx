@@ -19,15 +19,17 @@ export default function Footer() {
               <p>123 - 456 - 7890</p>
             </div>
           </div>
-          <div className="right">
+          <div className={styles.right}>
             <h2>Check us out:</h2>
             <Image
+              className={styles["right-content"]}
               src={`/camellia/images/insta-logo.webp`}
               alt="Instagram Logo"
               width={100}
               height={100}
             />{" "}
             <Image
+              className={styles["right-content"]}
               src={`/camellia/images/linkedin-logo.webp`}
               alt="LinkedIn Logo"
               width={100}

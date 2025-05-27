@@ -1,0 +1,21 @@
+.header {
+  margin-bottom: 4rem;
+}
+
+.collapsable {
+  border-bottom: 3px solid #b4b4b4;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .header {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .collapsable {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+  }
+}

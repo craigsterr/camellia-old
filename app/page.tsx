@@ -1,6 +1,6 @@
-import NavBar from "./NavBar";
-import Collapsable from "./Collapsable";
-import Footer from "./Footer";
+import NavBar from "./components/NavBar";
+import Collapsable from "./components/Collapsable";
+import Footer from "./components/Footer";
 import Image from "next/image";
 import Head from "next/head";
 export default function Home() {
@@ -14,10 +14,10 @@ export default function Home() {
       <main>
         <section className="hero" aria-label="Introduction">
           <div className="hero-content">
-            <p>
+            <h3>
               Opening statement that will <strong>attract users</strong> and
               establish <strong>brand personality</strong>.
-            </p>
+            </h3>
           </div>
         </section>
 
@@ -25,7 +25,7 @@ export default function Home() {
           <div className="section1-content">
             <Image
               className="who-image"
-              src="https://placehold.co/1000x600/cccccc/ffffff?text=I'm+GAY"
+              src="https://placehold.co/1000x600/cccccc/ffffff?text=Coming+soon"
               alt="Coming soon"
               width={1000}
               height={600}
@@ -33,10 +33,12 @@ export default function Home() {
             <div className="section1-text">
               <h2 id="who-we-are">Who are we?</h2>
               <p>
-                Two gay professionals dedicated to delivering gay sex to men
-                (and women). Incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea.
+                We&apos;re a <strong>two-person</strong> web development team
+                with a mission: to build fast, elegant, and user-focused
+                websites and applications. From <strong>startups</strong> to
+                <strong> established brands</strong>, we help ideas come to life
+                through clean code, beautiful design, and thoughtful
+                collaboration.{" "}
               </p>
             </div>
           </div>
@@ -44,10 +46,12 @@ export default function Home() {
 
         <section className="section2" aria-label="Company mission">
           <div className="section2-content">
-            <p>
-              Our mission is to create meaningful digital experiences that
-              resonate with users and foster long-term relationships.
-            </p>
+            <h3>
+              Our mission is to create meaningful
+              <strong> digital experiences</strong> that{" "}
+              <strong>resonate</strong> with users and foster long-term
+              relationships.
+            </h3>
           </div>
         </section>
 

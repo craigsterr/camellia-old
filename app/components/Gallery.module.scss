@@ -1,0 +1,43 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.gallery-item {
+  background-color: #e0e0e0;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease;
+
+  opacity: 0;
+  animation: fade-slide-left 0.6s ease forwards;
+
+  &:hover {
+    background-color: #ccc;
+  }
+}
+
+// Loop to create staggered delays for first 10 items
+@for $i from 1 through 20 {
+  .gallery-item:nth-child(#{$i}) {
+    animation-delay: #{($i - 1) * 0.05}s;
+  }
+}
+
+@keyframes fade-slide-left {
+  0% {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
