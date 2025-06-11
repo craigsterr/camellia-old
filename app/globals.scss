@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Neue Haas Grotesk Display";
-  src: url("/camellia/fonts/NeueHaasDisplayBlack.ttf") format("truetype");
+  src: url("/camellia/fonts/NeueHaasDisplayMediu.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -33,12 +33,12 @@ h3 {
 }
 
 p {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 section {
   width: 40%;
-  margin-top: 5%;
+  margin-top: 12%;
   margin-left: $side-margins;
   margin-right: $side-margins;
 }
@@ -58,14 +58,16 @@ section {
     display: flex;
     justify-content: space-between;
 
-    text-align: right;
+    text-align: left;
     p {
+      font-size: 2rem;
       opacity: 0;
       animation: fade-slide-left 0.6s ease-in-out 0.2s forwards;
     }
 
     h2 {
-      transform: translateX(-60%);
+      transform: translateX(-40%);
+      margin-bottom: 3rem;
       opacity: 0;
       animation: fade-slide-left-further 1.2s ease-in-out 0.1s forwards;
     }
@@ -122,7 +124,7 @@ section {
   }
   100% {
     opacity: 1;
-    transform: translateX(-60%);
+    transform: translateX(-23%);
   }
 }
 
@@ -168,7 +170,6 @@ section {
 
       h2,
       p {
-        margin: 0 2rem;
         text-align: center;
         animation: fade-slide-right 0.7s ease-in-out forwards;
         opacity: 1;

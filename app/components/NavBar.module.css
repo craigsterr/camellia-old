@@ -1,0 +1,65 @@
+.navbar {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+.navbar .nav-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+.navbar .nav-container .logo {
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  font-size: 2.5rem;
+}
+.navbar .nav-container .menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.navbar .nav-container .nav-links {
+  display: flex;
+  gap: 1rem;
+}
+.navbar .nav-container .nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+.navbar .nav-links a {
+  position: relative;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 2.5rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s ease;
+}
+.navbar .nav-links a.active {
+  background-color: #e0e0e0;
+  color: #000;
+}
+.navbar .nav-links a:hover {
+  background-color: rgba(192, 192, 192, 0.5);
+}
+@media (max-width: 768px) {
+  .navbar .nav-container .menu-toggle {
+    display: block;
+  }
+  .navbar .nav-container .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  .navbar .nav-container .nav-links.open {
+    display: flex;
+  }
+}/*# sourceMappingURL=NavBar.module.css.map */

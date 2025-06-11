@@ -1,0 +1,25 @@
+.toggleWrapper {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.toggleButton {
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.toggleButton:hover {
+  background-color: #ccc;
+}
+
+.active {
+  background-color: #999;
+  color: #fff;
+}/*# sourceMappingURL=Buttons.module.css.map */
