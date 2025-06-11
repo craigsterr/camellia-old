@@ -6,7 +6,7 @@
   .nav-container {
     display: flex;
     justify-content: space-between;
-    max-width: 100rem;
+    max-width: 70%;
     margin: 0 auto;
 
     .logo {
@@ -29,10 +29,10 @@
       gap: 1rem;
 
       a {
+        align-items: center;
         text-decoration: none;
         color: #333;
-        font-weight: 500;
-        font-size: 2.5rem;
+        font-size: 2rem;
       }
     }
   }

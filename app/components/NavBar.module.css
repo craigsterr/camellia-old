@@ -13,11 +13,11 @@
   font-weight: bold;
   text-decoration: none;
   color: #333;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 .navbar .nav-container .menu-toggle {
   display: none;
-  font-size: 2rem;
+  font-size: 1rem;
   background: none;
   border: none;
   cursor: pointer;
@@ -30,14 +30,14 @@
   text-decoration: none;
   color: #333;
   font-weight: 500;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 .navbar .nav-links a {
   position: relative;
   text-decoration: none;
   color: #333;
   font-weight: 500;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   padding: 0.2rem 0.5rem;
   border-radius: 0.3rem;
   transition: background-color 0.3s ease;
@@ -62,4 +62,4 @@
   .navbar .nav-container .nav-links.open {
     display: flex;
   }
-}/*# sourceMappingURL=NavBar.module.css.map */
+} /*# sourceMappingURL=NavBar.module.css.map */
